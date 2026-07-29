@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carreira+ | Roadmaps de carreira em tecnologia</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"> <!---Perguntar para Fabiano sobre Favicon--->
+  <link rel="icon" type="image/svg+xml" sizes="100x100" href="assets/favicon2.svg" />
   <meta name="description" content="Roadmaps de carreira para te guiar nos estudos, desenvolvimento de habilidades e conquista dos seus objetivos na área de tecnologia." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +28,7 @@
       <nav class="nav" id="mainNav">
         <a href="#inicio" class="nav__link is-active" data-nav-link>Início</a>
         <a href="#carreiras" class="nav__link" data-nav-link>Carreiras</a>
+        <a href="#descobrir" class="btn btn--ghost">Descobrir minha carreira</a>
         <a href="#roadmaps" class="nav__link" data-nav-link>Roadmaps</a>
         <a href="#recursos" class="nav__link" data-nav-link>Recursos</a>
         <a href="#sobre" class="nav__link" data-nav-link>Sobre</a>
@@ -54,7 +55,6 @@
     <!------ HERO ------>
     <section class="hero" id="inicio">
       <div class="container hero__grid">
-
         <div class="hero__content">
           <span class="badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,11 +84,9 @@
           </div>
         </div>
 
-          <ol class="roadmap-card" id="roadmapCard" aria-label="Etapas do roadmap de carreira">
-            <!-- preenchido com JavaScript a partir de data.json -->
-          </ol>
-        </div>
-
+        <ol class="roadmap-card" id="roadmapCard" aria-label="Etapas do roadmap de carreira">
+          <!-- preenchido com JavaScript a partir de dados.json -->
+        </ol>
       </div>
     </section>
 
@@ -106,14 +104,56 @@
       </div>
     </section>
 
+    <!----- DESCUBRA SUA CARREIRA (QUIZ) ----->
+  <section class="quiz-teaser" id="descobrir">
+    <div class="container quiz-teaser__inner">
+     <span class="badge">
+      Ainda não sabe por onde começar?
+    </span>
+    <h2 class="section-title">Descubra qual área combina com você</h2>
+    <p class="section-subtitle">
+      Responda algumas perguntas rápidas e descubra o roadmap ideal para começar.
+    </p>
+    <button type="button" class="btn btn--primary" id="startQuizBtn">
+      Fazer o teste
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="quiz" id="quiz" hidden>
+      <div class="quiz__questions" id="quizQuestions"></div>
+
+      <div class="quiz__result" id="quizResult" hidden>
+        <span class="quiz__result-icon" id="quizResultIcon"></span>
+        <p class="quiz__result-label">Sua área ideal é</p>
+        <h3 class="quiz__result-title" id="quizResultTitle"></h3>
+        <p class="quiz__result-desc" id="quizResultDesc"></p>
+        <div class="quiz__result-actions">
+          <a href="#roadmaps" class="btn btn--primary" id="quizResultLink">Ver roadmap dessa área</a>
+          <button type="button" class="btn btn--outline" id="retryQuizBtn">Refazer teste</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!----ROADMAPS------>
     <section class="section-alt" id="roadmaps">
       <div class="container section-alt__inner">
-        <h2 class="section-title">Roadmaps completos, sem enrolação</h2>
+        <h2 class="section-title">Roadmaps completos</h2>
         <p class="section-subtitle">
           Cada trilha é dividida em etapas claras, com o que estudar e em qual ordem.
         </p>
-        <a href="#" class="btn btn--primary">Ver todos os roadmaps</a>
+        <div class="roadmap-tabs" id="roadmapTabs">
+          <button type="button" class="roadmap-tab is-active" data-roadmap="frontend">Front-end</button>
+          <button type="button" class="roadmap-tab" data-roadmap="backend">Back-end</button>
+          <button type="button" class="roadmap-tab" data-roadmap="devops">DevOps</button>
+        </div>
+
+        <ol class="roadmap-card roadmap-detail" id="roadmapDetail" aria-label="Etapas do roadmap selecionado">
+          <!-- preenchido via JavaScript -->
+        </ol>
       </div>
     </section>
 

@@ -1,5 +1,5 @@
 
-/* CARREIRA+ — Styele */
+/* CARREIRA+ — Style */
 
 * {
   margin: 0;
@@ -270,6 +270,15 @@ button {
   border-color: var(--accent);
   color: var(--accent-light);
 }
+.btn--ghost {
+  background: transparent;
+  color: var(--accent-light);
+  padding-inline: 4px;
+}
+
+.btn--ghost:hover {
+  color: var(--text-primary);
+}
 
 /* HERO */
 .hero {
@@ -479,6 +488,199 @@ button {
   font-weight: 600;
   font-size: 0.92rem;
   color: var(--text-primary);
+}
+
+/* DESCUBRA SUA CARREIRA (QUIZ) */
+.quiz-teaser {
+  padding: 90px 0;
+  border-top: 1px solid var(--border-color);
+  background: radial-gradient(circle at 50% 0%, rgba(239, 68, 89, 0.08), transparent 60%);
+}
+
+.quiz-teaser__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quiz-teaser .badge {
+  margin-bottom: 20px;
+}
+
+.quiz-teaser .section-title {
+  margin-bottom: 12px;
+}
+
+.quiz {
+  width: 100%;
+  max-width: 640px;
+  margin-top: 48px;
+  text-align: left;
+}
+
+.quiz__progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.quiz__progress-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background-color: var(--bg-card);
+  overflow: hidden;
+}
+
+.quiz__progress-fill {
+  height: 100%;
+  background: var(--accent-gradient);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.quiz__progress-label {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.quiz-question {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.quiz-question__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.quiz-question__options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  text-align: left;
+  transition: border-color var(--transition), background-color var(--transition), transform var(--transition);
+}
+
+.quiz-option:hover {
+  border-color: var(--accent);
+  transform: translateX(2px);
+}
+
+.quiz-option__bullet {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-color);
+}
+
+.quiz__result {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.quiz__result-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  color: #fff;
+}
+
+.quiz__result-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.quiz__result-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--accent-light);
+  margin-bottom: 14px;
+}
+
+.quiz__result-desc {
+  color: var(--text-secondary);
+  max-width: 440px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.quiz__result-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ROADMAPS (ABAS) */
+.roadmap-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 32px;
+}
+
+.roadmap-tab {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.roadmap-tab:hover {
+  color: var(--text-primary);
+  border-color: var(--accent);
+}
+
+.roadmap-tab.is-active {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  color: #fff;
+}
+
+.roadmap-detail {
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: left;
 }
 
 /* SEÇÕES SECUNDÁRIAS (Roadmaps / Recursos / Sobre)*/

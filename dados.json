@@ -40,5 +40,123 @@
       "name": "Cibersegurança",
       "icon": "shield"
     }
-  ]
+  ],
+  "roadmapsDetailed": {
+    "frontend": [
+      { "number": "01", "title": "HTML e CSS", "description": "Estruture e estilize páginas com semântica e responsividade.", "icon": "code" },
+      { "number": "02", "title": "JavaScript", "description": "Adicione interatividade e manipulação do DOM.", "icon": "code" },
+      { "number": "03", "title": "React", "description": "Construa interfaces modernas com componentes e estado.", "icon": "code" }
+    ],
+    "backend": [
+      { "number": "01", "title": "Lógica e APIs", "description": "Entenda regras de negócio e comunicação entre sistemas.", "icon": "server" },
+      { "number": "02", "title": "Banco de dados", "description": "Modelagem, consultas e persistência de dados.", "icon": "database" },
+      { "number": "03", "title": "Arquitetura", "description": "Estruture aplicações com segurança e escalabilidade.", "icon": "server" }
+    ],
+    "devops": [
+      { "number": "01", "title": "Linux e shell", "description": "Domine o ambiente de execução e automações básicas.", "icon": "cloud" },
+      { "number": "02", "title": "Containers", "description": "Aprenda Docker e isolamento de ambientes.", "icon": "cloud" },
+      { "number": "03", "title": "CI/CD", "description": "Implemente deploys automatizados e pipelines.", "icon": "cloud" }
+    ]
+  },
+  "quiz": {
+  "questions": [
+    {
+      "question": "Qual tarefa te dá mais satisfação?",
+      "options": [
+        { "text": "Criar telas bonitas e interativas", "area": "frontend" },
+        { "text": "Resolver a lógica por trás de um sistema", "area": "backend" },
+        { "text": "Automatizar processos e infraestrutura", "area": "devops" },
+        { "text": "Analisar números e encontrar padrões", "area": "dados" },
+        { "text": "Encontrar falhas e proteger sistemas", "area": "ciberseguranca" }
+      ]
+    },
+    {
+      "question": "Como você prefere resolver um problema?",
+      "options": [
+        { "text": "Ajustando até a interface ficar perfeita", "area": "frontend" },
+        { "text": "Estruturando dados e regras de negócio", "area": "backend" },
+        { "text": "Montando um pipeline que resolve de vez", "area": "devops" },
+        { "text": "Cruzando informações até achar a resposta", "area": "dados" },
+        { "text": "Pensando como um invasor pensaria", "area": "ciberseguranca" }
+      ]
+    },
+    {
+      "question": "O que mais te chama atenção em um projeto?",
+      "options": [
+        { "text": "A experiência de quem vai usar", "area": "frontend" },
+        { "text": "Como as informações são processadas", "area": "backend" },
+        { "text": "Como o sistema roda sem cair", "area": "devops" },
+        { "text": "O que os dados podem revelar", "area": "dados" },
+        { "text": "Os riscos e vulnerabilidades envolvidos", "area": "ciberseguranca" }
+      ]
+    },
+    {
+      "question": "Qual dessas ferramentas mais desperta seu interesse?",
+      "options": [
+        { "text": "React, CSS e design de interfaces", "area": "frontend" },
+        { "text": "Bancos de dados e APIs", "area": "backend" },
+        { "text": "Docker, Linux e nuvem", "area": "devops" },
+        { "text": "Planilhas, SQL e dashboards", "area": "dados" },
+        { "text": "Firewalls e testes de invasão", "area": "ciberseguranca" }
+      ]
+    },
+    {
+      "question": "Em um time de tecnologia, você seria a pessoa que...",
+      "options": [
+        { "text": "Deixa tudo bonito e fácil de usar", "area": "frontend" },
+        { "text": "Garante que as regras do sistema façam sentido", "area": "backend" },
+        { "text": "Cuida pra nada quebrar em produção", "area": "devops" },
+        { "text": "Traz números pra embasar decisões", "area": "dados" },
+        { "text": "Protege a empresa de ataques", "area": "ciberseguranca" }
+      ]
+    },
+     "roadmapsDetailed": {
+    "frontend": [
+      { "number": "01", "title": "Fundamentos da web", "description": "HTML semântico, CSS e lógica de programação com JavaScript.", "icon": "code" },
+      { "number": "02", "title": "JavaScript na prática", "description": "Manipulação de DOM, eventos, fetch/API e ES6+.", "icon": "laptop" },
+      { "number": "03", "title": "Framework moderno", "description": "React (ou similar): componentes, hooks e gerenciamento de estado.", "icon": "chart" },
+      { "number": "04", "title": "Projetos reais", "description": "Responsividade, acessibilidade, versionamento com Git e deploy.", "icon": "shield" }
+    ],
+    "backend": [
+      { "number": "01", "title": "Fundamentos", "description": "Lógica de programação, uma linguagem back-end e Git.", "icon": "code" },
+      { "number": "02", "title": "Banco de dados", "description": "SQL, modelagem de dados e bancos relacionais e não relacionais.", "icon": "database" },
+      { "number": "03", "title": "APIs e servidores", "description": "Construção de APIs REST, autenticação e boas práticas.", "icon": "server" },
+      { "number": "04", "title": "Escalabilidade", "description": "Cache, filas, testes automatizados e deploy em produção.", "icon": "chart" }
+    ],
+    "devops": [
+      { "number": "01", "title": "Fundamentos de infraestrutura", "description": "Linux, redes básicas e linha de comando.", "icon": "code" },
+      { "number": "02", "title": "Containers", "description": "Docker, imagens, volumes e orquestração básica.", "icon": "cloud" },
+      { "number": "03", "title": "CI/CD", "description": "Pipelines de integração e entrega contínua.", "icon": "chart" },
+      { "number": "04", "title": "Cloud e monitoramento", "description": "Provedores de nuvem, escalabilidade e observabilidade.", "icon": "server" }
+    ]
+  }
+  ],
+  "areas": {
+    "frontend": { "title": "Front-end", "description": "Você curte dar vida às interfaces e se preocupa com a experiência de quem usa o produto. HTML, CSS, JavaScript e frameworks como React são o seu próximo passo.", "icon": "code" },
+    "backend": { "title": "Back-end", "description": "Você gosta de resolver a lógica por trás dos sistemas. Bancos de dados, APIs e linguagens de servidor combinam com o seu perfil.", "icon": "server" },
+    "devops": { "title": "DevOps", "description": "Você tem perfil de quem gosta de automatizar, integrar e manter tudo rodando sem falhas. Linux, nuvem e containers são ótimos pontos de partida.", "icon": "cloud" },
+    "dados": { "title": "Dados", "description": "Você tem faro para encontrar padrões e transformar números em decisões. SQL, análise de dados e estatística vão te abrir portas.", "icon": "database" },
+    "ciberseguranca": { "title": "Cibersegurança", "description": "Você pensa como quem protege — e como quem ataca. Redes, sistemas operacionais e testes de invasão são o caminho ideal pra você.", "icon": "shield" }
+  }
+},
+"roadmapsDetailed": {
+    "frontend": [
+      { "number": "01", "title": "Fundamentos da web", "description": "HTML semântico, CSS e lógica de programação com JavaScript.", "icon": "code" },
+      { "number": "02", "title": "JavaScript na prática", "description": "Manipulação de DOM, eventos, fetch/API e ES6+.", "icon": "laptop" },
+      { "number": "03", "title": "Framework moderno", "description": "React (ou similar): componentes, hooks e gerenciamento de estado.", "icon": "chart" },
+      { "number": "04", "title": "Projetos reais", "description": "Responsividade, acessibilidade, versionamento com Git e deploy.", "icon": "shield" }
+    ],
+    "backend": [
+      { "number": "01", "title": "Fundamentos", "description": "Lógica de programação, uma linguagem back-end e Git.", "icon": "code" },
+      { "number": "02", "title": "Banco de dados", "description": "SQL, modelagem de dados e bancos relacionais e não relacionais.", "icon": "database" },
+      { "number": "03", "title": "APIs e servidores", "description": "Construção de APIs REST, autenticação e boas práticas.", "icon": "server" },
+      { "number": "04", "title": "Escalabilidade", "description": "Cache, filas, testes automatizados e deploy em produção.", "icon": "chart" }
+    ],
+    "devops": [
+      { "number": "01", "title": "Fundamentos de infraestrutura", "description": "Linux, redes básicas e linha de comando.", "icon": "code" },
+      { "number": "02", "title": "Containers", "description": "Docker, imagens, volumes e orquestração básica.", "icon": "cloud" },
+      { "number": "03", "title": "CI/CD", "description": "Pipelines de integração e entrega contínua.", "icon": "chart" },
+      { "number": "04", "title": "Cloud e monitoramento", "description": "Provedores de nuvem, escalabilidade e observabilidade.", "icon": "server" }
+    ]
+  }
 }

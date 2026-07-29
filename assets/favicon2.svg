@@ -1,0 +1,54 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000">
+
+    <defs>
+
+        <linearGradient id="arrowGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+
+            <stop offset="0%" stop-color="#ff4d5f"></stop>
+            <stop offset="100%" stop-color="#ff2f3d"></stop>
+
+        </linearGradient>
+
+        <linearGradient id="plusGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+            <stop offset="0%" stop-color="#ffb5be"></stop>
+            <stop offset="100%" stop-color="#ff8397"></stop>
+
+        </linearGradient>
+
+    </defs>
+
+    <!-- SETA -->
+
+    <path fill="url(#arrowGradient)" d="
+        M180 1500
+
+        C520 1500,
+          860 1240,
+          1120 760
+
+        L980 720
+
+        L1380 500
+
+        L1415 920
+
+        L1270 830
+
+        C1040 1240,
+          720 1560,
+          180 1500
+        "></path>
+
+    <!-- + -->
+
+    <g transform="translate(1180 1180)">
+
+        <rect x="-55" y="-220" width="110" height="440" rx="35" fill="url(#plusGradient)"></rect>
+
+        <rect x="-220" y="-55" width="440" height="110" rx="35" fill="url(#plusGradient)"></rect>
+
+    </g>
+
+</svg>
