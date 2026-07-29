@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FF7A9F"></stop>
+            <stop offset="100%" stop-color="#FF4D5A"></stop>
+        </linearGradient>
+    </defs>
+
+    <!-- Seta -->
+
+    <path d="M10 52
+           C24 52 37 43 46 26
+           L43 31
+           L43 12
+           L26 19
+           L32 22
+           C25 35 18 45 10 52Z" fill="url(#grad)"></path>
+
+    <!-- + -->
+
+    <rect x="28" y="34" width="8" height="22" rx="2" fill="#FF97A9"></rect>
+
+    <rect x="21" y="41" width="22" height="8" rx="2" fill="#FF97A9"></rect>
+
+</svg>

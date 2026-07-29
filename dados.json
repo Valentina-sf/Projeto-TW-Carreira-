@@ -1,0 +1,44 @@
+{
+  "roadmapSteps": [
+    {
+      "number": "01",
+      "title": "Fundamentos",
+      "description": "Lógica, Programação, Git, Linux...",
+      "icon": "code"
+    },
+    {
+      "number": "02",
+      "title": "Desenvolvimento",
+      "description": "HTML, CSS, JS, Frameworks...",
+      "icon": "laptop"
+    },
+    {
+      "number": "03",
+      "title": "Especialização",
+      "description": "Tecnologias avançadas, práticas e projetos reais.",
+      "icon": "chart"
+    }
+  ],
+  "careers": [
+    {
+      "name": "Front-end",
+      "icon": "code"
+    },
+    {
+      "name": "Back-end",
+      "icon": "server"
+    },
+    {
+      "name": "DevOps",
+      "icon": "cloud"
+    },
+    {
+      "name": "Dados",
+      "icon": "database"
+    },
+    {
+      "name": "Cibersegurança",
+      "icon": "shield"
+    }
+  ]
+}
